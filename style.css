@@ -32,8 +32,8 @@ body {
     100% { transform: translateY(-20px) rotate(15deg); }
 }
 
-/* الكروت والتصميم الزجاجي المضيء */
-#login, #content {
+/* صندوق الدخول والتصميم الزجاجي */
+#login {
     position: relative;
     z-index: 1;
     background: rgba(255, 255, 255, 0.75);
@@ -45,6 +45,22 @@ body {
     margin: 40px auto;
     border: 2px solid rgba(255, 182, 193, 0.5);
     box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+}
+
+/* محتوى الموقع بعد الباسورد */
+#content {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 35px 25px;
+    border-radius: 30px;
+    max-width: 600px;
+    margin: 40px auto;
+    border: 2px solid rgba(255, 182, 193, 0.5);
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+    display: none; /* هتكفله الجافاسكريبت أول ما تفتح */
 }
 
 .floral-header {
