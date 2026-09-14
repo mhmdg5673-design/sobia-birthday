@@ -29,12 +29,13 @@
     </div>
     
     <button onclick="checkPassword()">افتحي يا سوبيا🙄</button>
-</div> <!-- تم إغلاق صندوق اللوجين هنا صح -->
+</div>
 
 <!-- محتوى الموقع (بيظهر بعد الباسورد) -->
 <div id="content" style="display:none;">
 
-    <audio id="bgMusic" loop controls>
+    <!-- تم إزالة controls وإضافة playsinline عشان يشتغل مع الآيفون -->
+    <audio id="bgMusic" loop preload="auto" playsinline>
         <source src="music.mp3" type="audio/mpeg">
     </audio>
 
@@ -75,3 +76,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+ 
